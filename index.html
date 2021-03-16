@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+<title>e-TRIO</title>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <img src="images/etrio final logo-Green-01.png" alt="e-Trio logo">
+    </div>
+    <div class="navbar-link">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <ul class="dropdown">
+              <button class="dropbtn">
+                <i class="fa fa-caret-down">
+               <li><a href="products.html">products</a></li></i></button>
+            <div class="dropdown-content">
+              <a href="#">Electric LCV</a>
+              <a href="#">Electric cycles</a>
+              <a href="#">Electric cars</a>
+              <a href="#">Electric Three wheelers</a>
+        </ul>
+           <li><a href="technology.html">technology</a></li>
+            <li><a href="media&gallery.html">media&gallery</a></li>
+            <li><a href="dealer network.html">dealer network</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+            
+        </ul>
+    </div>
+</div>
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/home1.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/home2.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/home3.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <div class=content>
+      <img src="images/home work.png">
+      <div class="content-text">
+        <hr>
+        <h3>About us</h3>
+      <p>E-Trio is an EV company with a vision to be the widest range of EVs. </p>
+      <p>We aim to be an affordable and accessible electric form of mobility for everyone.</p>
+<br>
+<br>
+         <p> We aim to transform the environment, lives and businesses of every EV owner.</p>
+         <button class="button">Explore</button>
+      </div>
+    </div>
+    <div class=product>
+        <h1>products</h1>
+    </div>
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/ecar.png">
+        </div>
+      <div class="swiper-slide">
+        <img src="images/etruck.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/ecycle.png">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/etrio auto.png">
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      loop: true,
+      centeredSlides:true,
+      grabCursor:true,
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <div class="header">
+    <h1>partners in progress</h1>
+
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="images/amazon.png" >
+      <img src="images/delhi.png">
+      <img src="images/ikea.png" >
+      <img src="images/flip.png">
+     </div>
+    <div class="column">
+      <img src="images/gati.png" >
+      <img src="images/bb.png ">
+      <img src="images/brring.png" >
+      <img src="images/grof.png" >
+      </div>  
+      <div class="column">
+        <img src="images/lets.png"> 
+        <img src="images/kalp.png" >
+        <img src="images/nikk.png" >
+        <img src="images/light-logi.png" >
+        </div>  
+        <div class="column">
+          <img src="images/ter.png">
+          <img src="images/tf.png">
+          <img src="images/am.png" >
+          <img src="images/fs.png">
+          </div>
+  </div>
+<div class="container">
+          <div class="text">
+            <h2>eTrio Technology</h2>
+          </div>  
+          <div class="slide">
+           <div class="image-column">
+             <img src="images/pone.jpg" alt="" style="width: 100%;">
+         </div>
+          <div class="image-column">
+             <img src="images/pthree.jpg" alt="" style="width: 100%;" >
+             </div>
+           <div class="image-column">
+          <img src="images/tech4.png" alt="" style="width: 100%;" > 
+         </div>
+        </div>
+</div>
+        <div class="infomative">
+          <div class="info">
+            <hr>
+            <h3>Designed,</h3>
+             <h3>Developed & Tested</h3>
+          </div>
+            <div class="info">
+         <hr>
+       <h3>Safety, Efficiency</h3>
+         <h3>Performance & Durability</h3>
+        </div>
+        <div class="info">
+        <hr>
+         <h3>Turnkey,</h3>
+           <h3>Solutions</h3>
+        </div>
+       <div class="info">
+         <hr>
+      <h3>Leap Frogging,</h3>
+        <h3>Connected Systems</h3>
+       </div>
+      </div>
+<div class="know">
+  <button>know More</button>
+</div>
+<div class="partner-container">
+<div class="techno">
+  <h2 class="techno-text">Our Certifications</h2>
+</div>
+<span>&#139;</span>
+<span>&#155;</span>
+<section class="customer-logos-slider">
+  <div class="slider"><img src="images/mcm.png"></div>
+  <div class="slider"><img src="images/msme.png"></div>
+  <div class="slider"><img src="images/arai.png"></div>
+  <div class="slider"><img src="images/eodb.png"></div>
+  <div class="slider"><img src="images/morth.png"></div>
+</section>
+</div>
+<div class="testimonals">
+  <div class="header-quotes">
+  <h2>Testimonals</h2>
+</div>
+  <div class="quotes">
+  <blockquote> <p> As Avaan, while we were exploring multiple OEMs for a durable and reliable electric vehicle, 
+      we have come across many startups who came across as Indian Musks but their products quality was pathetic.
+      But the Way Etrio chose to solve the problem is . Especially so for our drivers, as their love for ACE and the ease of driving an Electric ACE were meeting in this vehicle.  Their training to our drivers,  
+      for service needs and their availability when ever required make bigger difference to the complete eco system</p>
+    </blockquote>
+      <hr>
+      <h3 style="font-size: 20px;font-family:'Helvetica 67 Medium Condensed' !important;"> RAJEEV YSR</h3>
+				<h4 style="font-family:'Helvetica 67 Medium Condensed' !important;">Chief Operating Officer</h4>
+				<h5 style="font-family:'Helvetica 67 Medium Condensed' !important;">AVAAN ( A GATI Enterprise)</h5>
+				</div>
+        <div class="quotes">
+          <blockquote> <p>Delhivery has been using etrio cargo e vehicles in its network for over 3 months. Etrio’s electric Tata Ace will be a key to realize our
+            vision of fleet electrification in the mid mile. We are very happy with Etrio’s Data Driven approach for product development, which is
+            unique for this market. Etrio went beyond OEM and worked on providing full solution for us including driver training and guidance on
+            charging infrastructure set up.</p> </blockquote>
+              <hr>
+              <h3 style="font-size: 20px;font-family:'Helvetica 67 Medium Condensed' !important;">MUKTA LIMAYE</h3>
+                <h4 style="font-family:'Helvetica 67 Medium Condensed' !important;">Senior Director</h4>
+                <h5 style="font-family:'Helvetica 67 Medium Condensed' !important;">DELHIVERY</h5>
+                </div>
+                <div class="quotes">
+                  <blockquote> <p>LetsTransport has been working with eTrio for the past 8+ months and it has been a great experience so far. In the enterprise Last Mile logistics space, eTrio worked with us to understand the specific requirements and customize their product to fulfill the needs as closely as possible.
+                    Our experience with eTrio, in terms of response TAT, providing advice suggestions on EV technology and engaging with end customers to suit offering as per requirements has been quite good and we look forward to a continued partnership.
+                    </p>
+                     </blockquote>
+                      <hr>
+                      <h3 style="font-size: 20px;font-family:'Helvetica 67 Medium Condensed' !important;">ABHIJIT PAUL</h3>
+                        <h4 style="font-family:'Helvetica 67 Medium Condensed' !important;">National Account Manager</h4>
+                        <h5 style="font-family:'Helvetica 67 Medium Condensed' !important;">LETS TRANSPORT</h5>
+                        </div>
+                      </div>
+                    
+</body>
+</html>
